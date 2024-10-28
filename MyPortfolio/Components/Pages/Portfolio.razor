@@ -1,0 +1,73 @@
+﻿@page "/portfolio"
+
+<div class="container mt-5">
+    <h2>Portfolio</h2>
+    <p>Here are some of the projects I've worked on.</p>
+
+    <div class="mb-4">
+        <input type="text" class="form-control" placeholder="Search Projects..." @bind="SearchTerm" @oninput="FilterProjects" />
+    </div>
+
+    <div class="row mb-3">
+        @foreach (var item in FilteredProjects)
+        {
+            <a href="/portfolio/@item.Id" class="my-2 col-md-4">
+                <div class="card h-100 mb-4 d-flex flex-column">
+                    <img src="@item.ImageUrl" class="card-img-top" alt="@item.Title" />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@item.Title</h5>
+                        <p class="card-text">@item.Description</p>
+
+                        <div class="mt-auto">
+                            <h6>Programming Languages:</h6>
+                            <ul class="list-unstyled d-flex flex-row">
+                                @foreach (var language in item.ProgrammingLanguages)
+                                {
+                                    <li>
+                                        <img src="@language.ImageUrl" alt="@language.Name" style="width: 20px; height: 20px; margin-right: 8px;" />
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        }
+    </div>
+</div>
+
+@code {
+    private List<ListPortfolio> Projects = new List<ListPortfolio>
+    {
+        new ListPortfolio { Id = 1, Title = "Project 1", Description = "Deskripsi pertama 1", ImageUrl = "/img/webbo.jpeg", ProgrammingLanguages = new List<ProgrammingLanguage>
+            {
+                new ProgrammingLanguage { Name = "C#", ImageUrl = "http://example.com/csharp-image.jpg" },
+                new ProgrammingLanguage { Name = "JavaScript", ImageUrl = "http://example.com/js-image.jpg" }
+            } },
+        new ListPortfolio { Id = 2, Title = "Project 2", Description = "Deskripsi proyek 2.", ImageUrl = "/img/webbo.jpeg" },
+        new ListPortfolio { Id = 3, Title = "Project 3", Description = "Deskripsi proyek 3.", ImageUrl = "/img/webbo.jpeg" },
+        new ListPortfolio { Id = 4, Title = "Project 4", Description = "Deskripsi proyek 4.", ImageUrl = "/img/webbo.jpeg" },
+        new ListPortfolio { Id = 5, Title = "Project 5", Description = "Deskripsi proyek 5.", ImageUrl = "/img/webbo.jpeg" },
+        new ListPortfolio { Id = 6, Title = "Project 6", Description = "Deskripsi proyek 6.", ImageUrl = "/img/webbo.jpeg" },
+        new ListPortfolio { Id = 7, Title = "Project 7", Description = "Deskripsi proyek 7.", ImageUrl = "/img/webbo.jpeg" },
+        new ListPortfolio { Id = 8, Title = "Project 8", Description = "Deskripsi proyek 8.", ImageUrl = "/img/webbo.jpeg" },
+        new ListPortfolio { Id = 9, Title = "Project 9", Description = "Deskripsi proyek 9.", ImageUrl = "/img/webbo.jpeg" },
+        new ListPortfolio { Id = 10, Title = "Project 10", Description = "Deskripsi proyek 10.", ImageUrl = "/img/webbo.jpeg" }
+    };
+
+    private List<ListPortfolio> FilteredProjects =>
+        string.IsNullOrWhiteSpace(SearchTerm) ? Projects : Projects
+            .Where(p => p.Title.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                         p.Description.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                         p.ProgrammingLanguages.Any(l => l.Name.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase)))
+            .ToList();
+
+    private string SearchTerm { get; set; } = string.Empty;
+
+    private void FilterProjects(ChangeEventArgs e)
+    {
+        SearchTerm = e.Value.ToString();
+        // Not required, as FilteredProjects is computed property
+    }
+}

@@ -1,0 +1,66 @@
+﻿@page "/blog"
+@inject NavigationManager NavigationManager
+
+<div class="container mt-4">
+    <h3 class="text-center">My Tech Notes</h3>
+
+    <!-- Search Input -->
+    <input type="text" @bind="searchTerm" placeholder="Search articles..." class="form-control mb-4" />
+
+    <!-- Blog Cards -->
+    <div class="row">
+        @foreach (var article in FilteredArticles)
+        {
+            <div class="col-12 mb-3">
+                <NavLink class="card card-article" @onclick="() => NavigateToDetail(article.Id)">
+                    <img src="@article.ImageUrl" class="card-img-top" alt="@article.Title" />
+                    <div class="card-body">
+                        <h5 class="card-title">@article.Title</h5>
+                        <p class="card-text">@article.Caption</p>
+                        <p class="text-muted">@article.Date.ToString("MMMM dd, yyyy")</p>
+                    </div>
+                </NavLink>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private string searchTerm = "";
+    private List<Article> articles = new List<Article>
+    {
+        new Article { Id = 1, Title = "Introduction to Blazor", Caption = "Learn about the basics of Blazor.", Date = new DateTime(2023, 5, 20), ImageUrl = "https://example.com/blazor-intro.jpg", Url = "https://medium.com/@snakesystem/hyperparameter-tuning-pada-random-forest-6f3050f4b6ef" },
+        new Article { Id = 2, Title = "Advanced Blazor Components", Caption = "Dive deeper into Blazor components.", Date = new DateTime(2023, 6, 15), ImageUrl = "https://example.com/advanced-blazor.jpg", Url = "https://medium.com/@yourprofile/advanced-blazor-components" },
+        new Article { Id = 3, Title = "Blazor State Management", Caption = "Manage state effectively in Blazor.", Date = new DateTime(2023, 7, 10), ImageUrl = "https://example.com/state-management.jpg", Url = "https://medium.com/@yourprofile/blazor-state-management" }
+    };
+
+    // Filtered list of articles based on search term
+    private IEnumerable<Article> FilteredArticles =>
+        articles.Where(a =>
+            a.Title.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            a.Caption.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            a.Date.ToString("MMMM dd, yyyy").Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+
+    private void NavigateToDetail(int id)
+    {
+        // Navigates to the blog detail page with the article URL as a parameter
+        NavigationManager.NavigateTo($"/blog/{id}");
+    }
+
+    // Model for Article
+    public class Article
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Caption { get; set; }
+        public DateTime Date { get; set; }
+        public string ImageUrl { get; set; }
+        public string Url { get; set; }
+    }
+}
+
+<style>
+    .card-article {
+        cursor: pointer !important;
+    }
+</style>

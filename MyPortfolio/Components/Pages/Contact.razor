@@ -1,0 +1,42 @@
+﻿@page "/contact"
+@inject IJSRuntime JSRuntime
+
+<div class="container mt-5">
+    <h2>Contact Me</h2>
+    <form @onsubmit="SendMessage">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" @bind="Name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" @bind="Email">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" @bind="Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
+
+@code {
+    private string Name { get; set; } = string.Empty;
+    private string Email { get; set; } = string.Empty;
+    private string Message { get; set; } = string.Empty;
+
+    private async Task SendMessage()
+    {
+        // Nomor WhatsApp tujuan (ubah sesuai kebutuhan)
+        var phoneNumber = "6282323443535"; // ganti dengan nomor tujuan
+
+        // Format pesan dengan encoding untuk memastikan semua karakter aman di URL
+        var whatsappMessage = Uri.EscapeDataString($"Name: {Name}\nEmail: {Email}\nMessage: {Message}");
+
+        // Buat URL WhatsApp dengan pesan terencode
+        var whatsappUrl = $"https://wa.me/{phoneNumber}?text={whatsappMessage}";
+
+        // Panggil fungsi JavaScript untuk membuka URL di tab baru
+        await JSRuntime.InvokeVoidAsync("openInNewTab", whatsappUrl);
+    }
+}

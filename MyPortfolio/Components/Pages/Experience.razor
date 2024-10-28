@@ -1,0 +1,368 @@
+﻿@page "/experience"
+@inject IJSRuntime JS
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-content-center">
+
+        <!-- Bagian Programming Languages -->
+        <h3 class="text-center my-3">Programming Languages</h3>
+        <div class="row">
+            @foreach (var experience in experiences.Where(e => e.Category == "Programming"))
+            {
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 d-flex">
+                    <div class="card flex-fill bg-body-tertiary">
+                        <img src="@experience.Language.ImageUrl" class="card-img-top h-100 px-5 pt-1" alt="@experience.Language.Name" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mt-auto">@experience.Language.Name</h5>
+                            <p class="card-text mt-auto">Experience: @experience.YearsExperience years</p>
+                            <div class="progress mt-auto">
+                                <div class="progress-bar @GetProgressBarClass(experience.Proficiency)" role="progressbar"
+                                     style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                     id="progress-bar-@experience.Language.Name">
+                                    <span class="progress-text" id="progress-text-@experience.Language.Name">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Bagian Frameworks -->
+        <h3 class="text-center my-3">Frameworks</h3>
+        <div class="row">
+            @foreach (var experience in experiences.Where(e => e.Category == "Framework"))
+            {
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 d-flex">
+                    <div class="card flex-fill bg-body-tertiary">
+                        <img src="@experience.Language.ImageUrl" class="card-img-top h-100 px-5 pt-1" alt="@experience.Language.Name" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mt-auto">@experience.Language.Name</h5>
+                            <p class="card-text mt-auto">Experience: @experience.YearsExperience years</p>
+                            <div class="progress mt-auto">
+                                <div class="progress-bar @GetProgressBarClass(experience.Proficiency)" role="progressbar"
+                                     style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                     id="progress-bar-@experience.Language.Name">
+                                    <span class="progress-text" id="progress-text-@experience.Language.Name">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Bagian Other Tech -->
+        <h3 class="text-center my-3">Others Technology</h3>
+        <div class="row">
+            @foreach (var experience in experiences.Where(e => e.Category == "Other"))
+            {
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 d-flex">
+                    <div class="card flex-fill bg-body-tertiary">
+                        <img src="@experience.Language.ImageUrl" class="card-img-top h-100 px-5 pt-1" alt="@experience.Language.Name" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mt-auto">@experience.Language.Name</h5>
+                            <p class="card-text mt-auto">Experience: @experience.YearsExperience years</p>
+                            <div class="progress mt-auto">
+                                <div class="progress-bar @GetProgressBarClass(experience.Proficiency)" role="progressbar"
+                                     style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                     id="progress-bar-@experience.Language.Name">
+                                    <span class="progress-text" id="progress-text-@experience.Language.Name">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    
+    private List<Experiences> experiences = new List<Experiences>
+    {
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "C#",
+                ImageUrl = "/svg/csharp.svg"
+            },
+            YearsExperience = 3,
+            Category = "Programming",
+            Proficiency = 80
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Typescript",
+                ImageUrl = "/svg/typescript.svg"
+            },
+            YearsExperience = 2,
+            Category = "Programming",
+            Proficiency = 70
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "JavaScript",
+                ImageUrl = "/svg/javascript.svg"
+            },
+            YearsExperience = 5,
+            Category = "Programming",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Python",
+                ImageUrl = "/svg/python.svg"
+            },
+            YearsExperience = 5,
+            Category = "Programming",
+            Proficiency = 65
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "CSS",
+                ImageUrl = "/svg/css.svg"
+            },
+            YearsExperience = 6,
+            Category = "Programming",
+            Proficiency = 90
+        },
+         new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "HTML",
+                ImageUrl = "/svg/html.svg"
+            },
+            YearsExperience = 6,
+            Category = "Programming",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Blazor",
+                ImageUrl = "/svg/blazor.svg"
+            },
+            YearsExperience = 2,
+            Category = "Framework",
+            Proficiency = 75
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "ASP .NET CORE",
+                ImageUrl = "/svg/dot-net-core.svg"
+            },
+            YearsExperience = 3,
+            Category = "Framework",
+            Proficiency = 80
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "React JS/TS",
+                ImageUrl = "/svg/react.svg"
+            },
+            YearsExperience = 5,
+            Category = "Framework",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Vite JS/TS",
+                ImageUrl = "/svg/vitejs.svg"
+            },
+            YearsExperience = 5,
+            Category = "Framework",
+            Proficiency = 80
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Bootstrap",
+                ImageUrl = "/svg/bootstrap.svg"
+            },
+            YearsExperience = 6,
+            Category = "Framework",
+            Proficiency = 90
+        },
+         new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "SASS",
+                ImageUrl = "/svg/sass.svg"
+            },
+            YearsExperience = 4,
+            Category = "Framework",
+            Proficiency = 85
+        },
+         new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "ASP .NET Framework",
+                ImageUrl = "/svg/netframework.svg"
+            },
+            YearsExperience = 3,
+            Category = "Framework",
+            Proficiency = 60
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Next JS/TS",
+                ImageUrl = "/svg/next-js.svg"
+            },
+            YearsExperience = 3,
+            Category = "Framework",
+            Proficiency = 65
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Tailwind CSS",
+                ImageUrl = "/svg/tailwind-css.svg"
+            },
+            YearsExperience = 3,
+            Category = "Framework",
+            Proficiency = 65
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "GIT",
+                ImageUrl = "/svg/git-icon.svg"
+            },
+            YearsExperience = 6,
+            Category = "Other",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "GIT Bash CLI",
+                ImageUrl = "/svg/git-bash.svg"
+            },
+            YearsExperience = 6,
+            Category = "Other",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Node JS",
+                ImageUrl = "/svg/nodejs.svg"
+            },
+            YearsExperience = 4,
+            Category = "Other",
+            Proficiency = 85
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "MS. SQL Server",
+                ImageUrl = "/svg/sql-server.svg"
+            },
+            YearsExperience = 3,
+            Category = "Other",
+            Proficiency = 80
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Mongo DB",
+                ImageUrl = "/svg/mongodb.svg"
+            },
+            YearsExperience = 3,
+            Category = "Other",
+            Proficiency = 65
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Postgre SQL",
+                ImageUrl = "/svg/postgresql.svg"
+            },
+            YearsExperience = 1,
+            Category = "Other",
+            Proficiency = 55
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "GIT Tea",
+                ImageUrl = "/svg/gitea.svg"
+            },
+            YearsExperience = 2,
+            Category = "Other",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Web Socket",
+                ImageUrl = "/svg/websocket.svg"
+            },
+            YearsExperience = 2,
+            Category = "Other",
+            Proficiency = 65
+        },
+    };
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            AnimateProgressBars();
+        }
+    }
+
+    private async void AnimateProgressBars()
+    {
+        foreach (var experience in experiences)
+        {
+            var progressBarId = $"progress-bar-{experience.Language.Name}";
+            var progressTextId = $"progress-text-{experience.Language.Name}";
+            var progressValue = experience.Proficiency;
+            await JS.InvokeVoidAsync("animateProgressBar", progressBarId, progressTextId, progressValue);
+        }
+    }
+
+    private string GetProgressBarClass(int proficiency)
+    {
+        if (proficiency < 50) return "bg-danger"; // Warna danger
+        if (proficiency < 60) return "bg-warning";    // Warna warning
+        if (proficiency < 70) return "bg-info"; // Warna info
+        if (proficiency < 80) return "bg-primary"; // Warna Primary
+        return "bg-success";                        // Warna Success
+    }
+    
+}

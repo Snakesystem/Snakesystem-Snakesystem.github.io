@@ -1,0 +1,349 @@
+﻿@page "/"
+@using MyPortfolio.Components.Layout
+@using Blazor.AnimateOnScroll
+
+<div class="container mb-5">
+    <!-- Row pertama -->
+    <div class="row">
+        <h1 class="welcome text-start my-5">Hallo👋, saya</h1>
+
+        <!-- Kolom kiri: Nama dan Pekerjaan -->
+        <div class="col-md-6">
+            <h2 class="display-4 my-name">Feri Irawansyah</h2>
+            <h3 class="text-muted">Programmer | Software Engineer</h3>
+            <p>
+                Ini adalah deskripsi singkat tentang diri Anda. Anda bisa menjelaskan pengalaman kerja, keahlian, atau hal-hal lain yang ingin Anda sampaikan.
+            </p>
+        </div>
+
+        <!-- Kolom kanan: Foto Profil -->
+        <div class="col-md-6 text-center">
+            <img src="/img/linglung.jpeg" alt="Foto Profil" class="img-fluid rounded-circle" style="max-width: 300px;" />
+        </div>
+    </div>
+
+    <!-- Tambahkan baris atau konten lain di sini jika perlu -->
+    <AnimateOnScroll Animation="Animations.FadeInLeft" AnimationDuration="TimeSpan.FromSeconds(1)">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center">My Projects Overview</h2>
+                <CustomCarousel item="Portfolio" id="portfolio" urlPage="/portfolio" />
+            </div>
+        </div>
+    </AnimateOnScroll>
+
+    <AnimateOnScroll Animation="Animations.FadeInRight" AnimationDuration="TimeSpan.FromSeconds(1)">
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="text-center">My Skill Programming</h2>
+                <CustomCarousel item="Skills" id="skill" customClass="px-5 pt-2" flexColumn="col-6 col-sm-3 col-md-2" countCard="6" urlPage="/experience" />
+            </div>
+        </div>
+    </AnimateOnScroll>
+    
+</div>
+
+<style>
+    /* Tambahkan gaya khusus jika perlu */
+    h2 {
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+</style>
+
+@code {
+    private List<CarouselItem> Portfolio = new List<CarouselItem>
+    {
+        new CarouselItem { Title = "Project 1", Description = "Deskripsi pertama gue nih boss proyek 1.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 2", Description = "Deskripsi proyek 2.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 3", Description = "Deskripsi proyek 3.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 4", Description = "Deskripsi proyek 4.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 5", Description = "Deskripsi proyek 5.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 6", Description = "Deskripsi proyek 6.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 7", Description = "Deskripsi proyek 7.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 8", Description = "Deskripsi proyek 8.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 9", Description = "Deskripsi proyek 9.", ImageUrl = "/img/webbo.jpeg" },
+        new CarouselItem { Title = "Project 10", Description = "Deskripsi proyek 10.", ImageUrl = "/img/webbo.jpeg" }
+    };
+
+    // Daftar Keterampilan
+    private List<CarouselItem> Skills = new List<CarouselItem>
+    {
+        new CarouselItem { Title = "C#", Description = "Programming", ImageUrl = "/svg/csharp.svg" },
+        new CarouselItem { Title = "Typescript", Description = "Programming", ImageUrl = "/svg/typescript.svg" },
+        new CarouselItem { Title = "Blazor", Description = "Framework", ImageUrl = "/svg/blazor.svg" },
+        new CarouselItem { Title = "ASP .NET CORE", Description = "Framework", ImageUrl = "/svg/dot-net-core.svg" },
+        new CarouselItem { Title = "React JS/TS", Description = "Framework", ImageUrl = "/svg/react.svg" },
+        new CarouselItem { Title = "Vite JS/TS", Description = "Framework", ImageUrl = "/svg/vitejs.svg" },
+        new CarouselItem { Title = "SASS", Description = "Framework", ImageUrl = "/svg/sass.svg" },
+        new CarouselItem { Title = "Bootstrap", Description = "Framework", ImageUrl = "/svg/bootstrap.svg" },
+        new CarouselItem { Title = "Tailwind CSS", Description = "Framework", ImageUrl = "/svg/tailwind-css.svg" },
+        new CarouselItem { Title = "GIT", Description = "Version Control System", ImageUrl = "/svg/git-icon.svg" },
+        new CarouselItem { Title = "Node JS", Description = "Javascript Runtime", ImageUrl = "/svg/nodejs.svg" },
+        new CarouselItem { Title = "MS. SL Server", Description = "DBMS", ImageUrl = "/svg/sql-server.svg" },
+        new CarouselItem { Title = "GIT Bash CLI", Description = "Version Control System", ImageUrl = "/svg/git-bash.svg" },
+        new CarouselItem { Title = "Web Socket", Description = "Realtime Send Data", ImageUrl = "/svg/websocket.svg" },
+        new CarouselItem { Title = "Next JS", Description = "Framework", ImageUrl = "/svg/next-js.svg" },
+    };
+
+    private List<Experiences> experiences = new List<Experiences>
+    {
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "C#",
+                ImageUrl = "/svg/csharp.svg"
+            },
+            YearsExperience = 3,
+            Category = "Programming",
+            Proficiency = 80
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Typescript",
+                ImageUrl = "/svg/typescript.svg"
+            },
+            YearsExperience = 2,
+            Category = "Programming",
+            Proficiency = 70
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "JavaScript",
+                ImageUrl = "/svg/javascript.svg"
+            },
+            YearsExperience = 5,
+            Category = "Programming",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Python",
+                ImageUrl = "/svg/python.svg"
+            },
+            YearsExperience = 5,
+            Category = "Programming",
+            Proficiency = 65
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "CSS",
+                ImageUrl = "/svg/css.svg"
+            },
+            YearsExperience = 6,
+            Category = "Programming",
+            Proficiency = 90
+        },
+         new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "HTML",
+                ImageUrl = "/svg/html.svg"
+            },
+            YearsExperience = 6,
+            Category = "Programming",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Blazor",
+                ImageUrl = "/svg/blazor.svg"
+            },
+            YearsExperience = 2,
+            Category = "Framework",
+            Proficiency = 75
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "ASP .NET CORE",
+                ImageUrl = "/svg/dot-net-core.svg"
+            },
+            YearsExperience = 3,
+            Category = "Framework",
+            Proficiency = 80
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "React JS/TS",
+                ImageUrl = "/svg/react.svg"
+            },
+            YearsExperience = 5,
+            Category = "Framework",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Vite JS/TS",
+                ImageUrl = "/svg/vitejs.svg"
+            },
+            YearsExperience = 5,
+            Category = "Framework",
+            Proficiency = 80
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Bootstrap",
+                ImageUrl = "/svg/bootstrap.svg"
+            },
+            YearsExperience = 6,
+            Category = "Framework",
+            Proficiency = 90
+        },
+         new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "SASS",
+                ImageUrl = "/svg/sass.svg"
+            },
+            YearsExperience = 4,
+            Category = "Framework",
+            Proficiency = 85
+        },
+         new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "ASP .NET Framework",
+                ImageUrl = "/svg/netframework.svg"
+            },
+            YearsExperience = 3,
+            Category = "Framework",
+            Proficiency = 60
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Next JS/TS",
+                ImageUrl = "/svg/next-js.svg"
+            },
+            YearsExperience = 3,
+            Category = "Framework",
+            Proficiency = 65
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Tailwind CSS",
+                ImageUrl = "/svg/tailwind-css.svg"
+            },
+            YearsExperience = 3,
+            Category = "Framework",
+            Proficiency = 65
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "GIT",
+                ImageUrl = "/svg/git-icon.svg"
+            },
+            YearsExperience = 6,
+            Category = "Other",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "GIT Bash CLI",
+                ImageUrl = "/svg/git-bash.svg"
+            },
+            YearsExperience = 6,
+            Category = "Other",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Node JS",
+                ImageUrl = "/svg/nodejs.svg"
+            },
+            YearsExperience = 4,
+            Category = "Other",
+            Proficiency = 85
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "MS. SQL Server",
+                ImageUrl = "/svg/sql-server.svg"
+            },
+            YearsExperience = 3,
+            Category = "Other",
+            Proficiency = 80
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Mongo DB",
+                ImageUrl = "/svg/mongodb.svg"
+            },
+            YearsExperience = 3,
+            Category = "Other",
+            Proficiency = 65
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Postgre SQL",
+                ImageUrl = "/svg/postgresql.svg"
+            },
+            YearsExperience = 1,
+            Category = "Other",
+            Proficiency = 55
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "GIT Tea",
+                ImageUrl = "/svg/gitea.svg"
+            },
+            YearsExperience = 2,
+            Category = "Other",
+            Proficiency = 90
+        },
+        new Experiences
+        {
+            Language = new ProgrammingLanguage
+            {
+                Name = "Web Socket",
+                ImageUrl = "/svg/websocket.svg"
+            },
+            YearsExperience = 2,
+            Category = "Other",
+            Proficiency = 65
+        },
+    };
+
+}

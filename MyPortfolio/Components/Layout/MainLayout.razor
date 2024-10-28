@@ -1,0 +1,29 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
+@inject ThemeService ThemeService
+@using Blazor.AnimateOnScroll
+
+@code {
+    private string _currentTheme = "dark"; // Tema default adalah "light"
+
+
+    private async Task UpdateTheme()
+    {
+        // Panggil JavaScript untuk mengubah atribut data-bs-theme
+        await JS.InvokeVoidAsync("setTheme", ThemeService.CurrentTheme);
+    }
+
+    private void ToggleTheme()
+    {
+        ThemeService.ToggleTheme(); // Panggil metode untuk mengubah tema
+        JS.InvokeVoidAsync("setTheme", ThemeService.CurrentTheme);
+    }
+}
+
+<NavMenu ToggleTheme="@ToggleTheme" />
+
+<main>
+    @Body
+</main>
+
+<Footer />

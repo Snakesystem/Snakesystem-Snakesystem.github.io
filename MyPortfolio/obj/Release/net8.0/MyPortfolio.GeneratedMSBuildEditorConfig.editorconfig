@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyPortfolio
+build_property.RootNamespace = MyPortfolio
+build_property.ProjectDir = D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Layout/CustomCarousel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQ3VzdG9tQ2Fyb3VzZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Layout/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRm9vdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/Blog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/BlogDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCbG9nRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/Experience.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFeHBlcmllbmNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/NotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/Portfolio.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQb3J0Zm9saW8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/PortfolioDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQb3J0Zm9saW9EZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-qh8gvnr70c
+
+[D:/STUDYPROJECT/NETCORE-REACT/BLAZOR/MyPortfolio/MyPortfolio/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-lopxmptr3h

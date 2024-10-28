@@ -1,0 +1,51 @@
+﻿@inject ThemeService ThemeService
+
+@code {
+    [Parameter]
+    public EventCallback ToggleTheme { get; set; }
+
+    public bool IsOpen { get; set; } = false;
+    private string? NavMenuCssClass => IsOpen ? "navbar-toggler" : "navbar-toggler collapsed";
+
+    private async Task OnToggleThemeClicked()
+    {
+        await ToggleTheme.InvokeAsync(null);
+    }
+
+    private void ToggleNav()
+    {
+        IsOpen = !IsOpen;
+    }
+}
+
+<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="/">Feri Irawansyah</a>
+        <NavLink @onclick="ToggleNav" class="@NavMenuCssClass">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </NavLink>
+
+        <div class="navbar-collapse @(IsOpen ? "collapsed" : "collapse")">
+            <div class="navbar-nav mx-auto d-flex justify-content-center align-items-center">
+                <NavLink class="nav-link" href="/">Home</NavLink>
+                <NavLink class="nav-link" href="about">About</NavLink>
+                <NavLink class="nav-link" href="portfolio">Portfolio</NavLink>
+                <NavLink class="nav-link" href="contact">Contact</NavLink>
+                <NavLink class="nav-link" href="experience">Experience</NavLink>
+                <NavLink class="nav-link" href="blog">Blog</NavLink>
+            </div>
+            <NavLink class="rounded-circle border-o" @onclick="OnToggleThemeClicked" style="cursor: pointer">
+                @if (ThemeService.CurrentTheme == "dark")
+                {
+                    <i class="bi bi-moon"></i>
+                }
+                else
+                {
+                    <i class="bi bi-sun"></i>
+                }
+            </NavLink>
+        </div>
+    </div>
+</nav>

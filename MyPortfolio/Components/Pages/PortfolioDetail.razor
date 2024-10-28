@@ -1,0 +1,75 @@
+﻿@page "/portfolio/{id:int}"
+@inject IJSRuntime JS
+
+<div class="container mt-4">
+    <h3 class="text-center my-3">Portfolio Detail - @portfolio?.Title</h3>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <img src="@portfolio?.ImageUrl" alt="@portfolio?.Title" class="img-fluid" style="max-width: 70%; height: auto; border-radius: 10px;" />
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <p>@portfolio?.Description</p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12 text-center">
+            <button class="btn btn-primary" @onclick="ReloadIframe">Reload Iframe</button>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12">
+            <iframe id="projectIframe" src="@portfolio?.WebsiteUrl" class="portfolio-iframe" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+@code {
+ 
+    [Parameter]
+    public int Id { get; set; }
+
+    private ListPortfolio portfolio { get; set; }
+
+    private List<ListPortfolio> Projects = new List<ListPortfolio>
+    {
+        new ListPortfolio { Id = 1, Title = "Project 1", Description = "Deskripsi pertama 1", ImageUrl = "/img/webbo.jpeg", WebsiteUrl = "http://localhost:8113/#/main",
+            ProgrammingLanguages = new List<ProgrammingLanguage>
+            {
+                new ProgrammingLanguage { Name = "C#", ImageUrl = "http://example.com/csharp-image.jpg" },
+                new ProgrammingLanguage { Name = "JavaScript", ImageUrl = "http://example.com/js-image.jpg" }
+            }
+        },
+        new ListPortfolio { Id = 2, Title = "Project 2", Description = "Deskripsi proyek 2.", ImageUrl = "/img/webbo.jpeg", WebsiteUrl = "http://localhost:8015/login" },
+        new ListPortfolio { Id = 3, Title = "Project 3", Description = "Deskripsi proyek 3.", ImageUrl = "/img/webbo.jpeg", WebsiteUrl = "https://example.com/project3" },
+        // Tambahkan proyek lainnya sesuai data yang diperlukan
+    };
+
+    protected override void OnInitialized()
+    {
+        portfolio = Projects.FirstOrDefault(p => p.Id == Id);
+    }
+
+    private async Task ReloadIframe()
+    {
+        await JS.InvokeVoidAsync("reloadIframe");
+    }
+
+    public class ListPortfolio
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string ImageUrl { get; set; }
+        public string WebsiteUrl { get; set; }
+        public List<ProgrammingLanguage> ProgrammingLanguages { get; set; } = new List<ProgrammingLanguage>();
+    }
+
+    public class ProgrammingLanguage
+    {
+        public string Name { get; set; }
+        public string ImageUrl { get; set; }
+    }
+}

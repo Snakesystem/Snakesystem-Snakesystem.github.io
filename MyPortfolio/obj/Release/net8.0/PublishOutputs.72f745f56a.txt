@@ -1,0 +1,8 @@
+D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\obj\Release\net8.0\PubTmp\Out\MyPortfolio.exe
+D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\obj\Release\net8.0\PubTmp\Out\MyPortfolio.dll
+D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\obj\Release\net8.0\PubTmp\Out\MyPortfolio.deps.json
+D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\obj\Release\net8.0\PubTmp\Out\MyPortfolio.runtimeconfig.json
+D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\obj\Release\net8.0\PubTmp\Out\MyPortfolio.pdb
+D:\STUDYPROJECT\NETCORE-REACT\BLAZOR\MyPortfolio\MyPortfolio\obj\Release\net8.0\PubTmp\Out\Blazor.AnimateOnScroll.dll

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="MyPortfolio.styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <HeadOutlet @rendermode="InteractiveServer" />
+</head>
+
+<body>
+    <Routes @rendermode="InteractiveServer" />
+    <script src="_framework/blazor.web.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.js" crossorigin="anonymous"></script>
+    <script>
+        function setTheme(theme) {
+            const htmlElement = document.querySelector("html");
+            if (htmlElement) {
+                htmlElement.setAttribute("data-bs-theme", theme); // Set tema ke atribut data
+            }
+
+            console.log('theme', theme)
+        }
+
+        function openInNewTab(url) {
+            window.open(url, '_blank');
+        }
+
+        function animateProgressBar(elementId, textElementId, targetValue) {
+            let progressBar = document.getElementById(elementId);
+            let progressText = document.getElementById(textElementId);
+            let width = 0;
+            let interval = setInterval(() => {
+                if (width >= targetValue) {
+                    clearInterval(interval); // Hentikan interval saat mencapai target
+                } else {
+                    width++;
+                    progressBar.style.width = width + '%';
+                    progressText.innerText = width + '%';
+                    progressBar.setAttribute('aria-valuenow', width);
+                }
+            }, 10); // Waktu delay untuk animasi
+        }
+
+        function reloadIframe() {
+            const iframe = document.getElementById("projectIframe");
+            if (iframe) {
+                iframe.src = iframe.src; // Set ulang src untuk reload iframe
+            }
+        }
+
+    </script>
+    <script src="_content/Blazor.AnimateOnScroll/js/AnimateOnScroll.js"></script>
+
+</body>
+
+</html>

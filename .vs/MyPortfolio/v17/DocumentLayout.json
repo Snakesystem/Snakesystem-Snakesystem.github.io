@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\layout\\customcarousel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\layout\\customcarousel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\experience.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\experience.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\blog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\blog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\globalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\globalmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\portfolio.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\portfolio.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\portfoliodetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\portfoliodetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\layout\\footer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\layout\\footer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\blogdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\blogdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\notfound.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\notfound.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\services\\themeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\services\\themeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|d:\\studyproject\\netcore-react\\blazor\\myportfolio\\myportfolio\\components\\pages\\about.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8285682A-3667-4A27-A15A-98F441913372}|MyPortfolio\\MyPortfolio.csproj|solutionrelative:myportfolio\\components\\pages\\about.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BlogDetail.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\BlogDetail.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\BlogDetail.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\BlogDetail.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\BlogDetail.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T09:41:24.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PortfolioDetail.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\PortfolioDetail.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\PortfolioDetail.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\PortfolioDetail.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\PortfolioDetail.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T07:50:10.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Blog.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Blog.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\Blog.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Blog.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\Blog.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T05:20:54.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Experience.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Experience.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\Experience.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Experience.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\Experience.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T05:20:11.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Footer.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Layout\\Footer.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Layout\\Footer.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Layout\\Footer.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Layout\\Footer.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T02:45:24.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GlobalModel.cs",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\GlobalModel.cs",
+              "RelativeDocumentMoniker": "MyPortfolio\\GlobalModel.cs",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\GlobalModel.cs",
+              "RelativeToolTip": "MyPortfolio\\GlobalModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T17:27:46.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomCarousel.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Layout\\CustomCarousel.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Layout\\CustomCarousel.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Layout\\CustomCarousel.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Layout\\CustomCarousel.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T17:26:15.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ThemeService.cs",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Services\\ThemeService.cs",
+              "RelativeDocumentMoniker": "MyPortfolio\\Services\\ThemeService.cs",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Services\\ThemeService.cs",
+              "RelativeToolTip": "MyPortfolio\\Services\\ThemeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T16:45:22.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Program.cs",
+              "RelativeDocumentMoniker": "MyPortfolio\\Program.cs",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Program.cs",
+              "RelativeToolTip": "MyPortfolio\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T16:22:02.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "MyPortfolio\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "RelativeToolTip": "MyPortfolio\\wwwroot\\bootstrap\\bootstrap.min.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-27T16:00:38.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Portfolio.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Portfolio.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\Portfolio.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Portfolio.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\Portfolio.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:50:54.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Routes.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Routes.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:48:55.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NotFound.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\NotFound.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\NotFound.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\NotFound.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\NotFound.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:48:34.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Error.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\Error.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:48:26.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "About.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\About.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\About.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\About.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\About.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:46:01.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:42:52.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Contact.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Contact.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\Contact.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Contact.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\Contact.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:45:25.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:43:43.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.css",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "MyPortfolio\\wwwroot\\app.css",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\wwwroot\\app.css",
+              "RelativeToolTip": "MyPortfolio\\wwwroot\\app.css",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-27T15:41:35.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:31:16.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\App.razor",
+              "RelativeDocumentMoniker": "MyPortfolio\\Components\\App.razor",
+              "ToolTip": "D:\\STUDYPROJECT\\NETCORE-REACT\\BLAZOR\\MyPortfolio\\MyPortfolio\\Components\\App.razor",
+              "RelativeToolTip": "MyPortfolio\\Components\\App.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T15:30:45.166Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

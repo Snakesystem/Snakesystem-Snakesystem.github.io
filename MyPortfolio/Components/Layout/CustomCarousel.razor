@@ -1,0 +1,81 @@
+﻿<div id="@id" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        @for (int i = 0; i < (item.Count + countCard - 1) / countCard; i++)
+        {
+            <button type="button" data-bs-target="#@id" data-bs-slide-to="@i" class="@(i == 0 ? "active" : "")" aria-current="true" aria-label="Slide @i"></button>
+        }
+    </div>
+    <div class="carousel-inner">
+        @for (int i = 0; i < item.Count; i += countCard)
+        {
+            <div class="carousel-item @(i == 0 ? "active" : "")">
+                <div class="row">
+                    @for (int j = 0; j < countCard && i + j < item.Count; j++)
+                    {
+                        <a href="@urlPage" class="my-2 @flexColumn">
+                            <div class="card mb-4 flex-fill bg-body-tertiary">
+                                <img src="@item[i + j].ImageUrl" class="card-img-top h-100 @customClass" alt="@item[i + j].Title" />
+                                <div class="card-body">
+                                    <h5 class="card-title">@item[i + j].Title</h5>
+                                    <p class="card-text fs-6">@item[i + j].Description</p>
+                                </div>
+                            </div>
+                        </a>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<CarouselItem> item { get; set; }
+
+    [Parameter]
+    public string id { get; set; }
+
+    [Parameter]
+    public string? flexColumn { get; set; } = "col-md-4";
+
+    [Parameter]
+    public int countCard { get; set; } = 3;
+
+    [Parameter]
+    public string? urlPage { get; set; }
+
+    [Parameter]
+    public string? customClass { get; set; }
+}
+
+<style>
+    .card {
+        display: flex;
+        flex-direction: column; /* Agar konten di dalam kartu tersusun secara vertikal */
+        height: 100%; /* Memastikan kartu mengisi ruang yang tersedia */
+    }
+
+    .carousel-indicators {
+        position: relative; /* Mengatur posisi relatif */
+        display: flex; /* Membuat indikator menjadi flex container */
+        justify-content: center; /* Menyusun indikator di tengah */
+        padding: 10px 0; /* Memberikan ruang di atas dan bawah indikator */
+        margin-bottom: -10px;
+    }
+
+        .carousel-indicators button {
+            background-color: #007bff; /* Warna latar belakang */
+            border: none; /* Menghilangkan border default */
+            margin: 0 5px; /* Jarak antar indikator */
+            opacity: 0.5; /* Opacity untuk indikator tidak aktif */
+            transition: opacity 0.2s; /* Transisi opacity */
+            border-radius: 50%; /* Membuat indikator menjadi bulat */
+            width: 10px !important; /* Lebar indikator */
+            height: 10px !important; /* Tinggi indikator */
+        }
+
+        .carousel-indicators .active {
+            opacity: 1; /* Opacity untuk indikator aktif */
+        }
+
+</style>

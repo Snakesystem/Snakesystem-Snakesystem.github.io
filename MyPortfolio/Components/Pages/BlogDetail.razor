@@ -1,0 +1,58 @@
+﻿@page "/blog/{id:int}"
+@inject NavigationManager NavigationManager
+@inject NavigationManager UriHelper
+
+<div class="d-flex flex-column m-2">
+    <div class="flex-row">
+        <a class="btn btn-primary" @onclick="NavigateBack">Back to Blog</a>
+        <h3 class="text-center">Blog Detail</h3>
+    </div>
+
+    @if (!string.IsNullOrEmpty(articleUrl))
+    {
+        <!-- Display Medium article in an iframe -->
+        <iframe src="@articleUrl" class="portfolio-iframe"></iframe>
+        @* @articleUrl *@
+    }
+    else
+    {
+        <p>Article not found.</p>
+    }
+</div>
+
+@code {
+    [Parameter] 
+    public int Id { get; set; }
+    private Article article { get; set; }
+    private string articleUrl;
+
+    public class Article
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Caption { get; set; }
+        public DateTime Date { get; set; }
+        public string ImageUrl { get; set; }
+        public string Url { get; set; }
+    }
+
+    private List<Article> articles = new List<Article>
+    {
+        new Article { Id = 1, Title = "Introduction to Blazor", Caption = "Learn about the basics of Blazor.", Date = new DateTime(2023, 5, 20), ImageUrl = "https://example.com/blazor-intro.jpg", Url = "https://medium.com/@snakesystem/hyperparameter-tuning-pada-random-forest-6f3050f4b6ef" },
+        new Article { Id = 2, Title = "Advanced Blazor Components", Caption = "Dive deeper into Blazor components.", Date = new DateTime(2023, 6, 15), ImageUrl = "https://example.com/advanced-blazor.jpg", Url = "https://medium.com/@yourprofile/advanced-blazor-components" },
+        new Article { Id = 3, Title = "Blazor State Management", Caption = "Manage state effectively in Blazor.", Date = new DateTime(2023, 7, 10), ImageUrl = "https://example.com/state-management.jpg", Url = "https://medium.com/@yourprofile/blazor-state-management" }
+    };
+
+    protected override void OnInitialized()
+    {
+        article = articles.FirstOrDefault(p => p.Id == Id);
+
+        articleUrl = article.Url;
+    }
+
+    private void NavigateBack()
+    {
+        // Navigates back to the main blog page
+        NavigationManager.NavigateTo("/blog");
+    }
+}
